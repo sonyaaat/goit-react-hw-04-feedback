@@ -1,0 +1,62 @@
+.button{
+width: 100px;
+height: 70px;
+background-color: aqua;
+border: 5px solid rgb(127, 165, 255);
+font-size: 25px;
+}
+.button:not(:last-child){
+margin-right: 20px;
+}
+.buttons__list{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin-right: 10px;
+}
+.button:hover{
+border:5px solid black
+}
+.button:nth-child(1):hover{
+    color: green;
+    border-color: green;
+}
+.button:nth-child(2):hover{
+    color: rgb(185, 185, 133);
+    border-color: rgb(206, 206, 60)een;
+}
+.button:nth-child(3):hover{
+    color: red;
+    border-color: red;
+}
+.button:hover {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+  
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+  
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+  
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+  
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }

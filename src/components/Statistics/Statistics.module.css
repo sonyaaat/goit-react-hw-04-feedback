@@ -1,0 +1,30 @@
+.statistics__list{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.statistic__item:not(:last-child){
+margin-right: 20px;
+}
+.statistic__item:first-child{
+    color: green;
+}
+.statistic__item:nth-child(2)
+{
+    color: rgb(185, 185, 133);
+}
+.statistic__item:nth-child(3)
+{
+    color: red;
+}
+.additional__list{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(35, 126, 136);
+}
+.additional__item:not(:last-child){
+    margin-right: 20px;
+    
+}
